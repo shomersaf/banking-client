@@ -1,0 +1,9 @@
+.carTitle{
+    background-color: rgb(233, 186, 136);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color:rgb(69, 19, 3);
+  }

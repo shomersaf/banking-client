@@ -1,0 +1,23 @@
+<div class="formDiv">
+    <h2>Add Account Action</h2>
+<form>
+    <input type="number" placeholder="Account Number" id="accNum" #accNum/>
+    <select name="type" id="type" #type (change)="changeWebsite($event)">
+        <option value="">-- Select type of action --</option>
+        <option value="deposit" #deposit>deposit</option>
+        <option value="withdraw" #withdraw>withdraw</option>
+        <option value="loan" #loan>loan</option>
+      </select>
+    <input type="number" placeholder="Ammount" id="ammount" #ammount/>
+    <input [style.display]="isLoanSelected()" type="number" placeholder="Interest" id="Interest" #interest/>
+    <input [style.display]="isLoanSelected()" type="number" placeholder="Payments" id="Payments" #payments/>
+    <button class="formButton" (click)="addAction({
+        accNumber:+accNum.value,
+        type:type.value,
+          amount:+ammount.value,
+           interest:+interest.value,
+           payments:+payments.value,
+        
+         })">Add</button>
+</form>
+</div>

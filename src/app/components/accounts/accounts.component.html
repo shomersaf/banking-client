@@ -1,0 +1,33 @@
+<h2>{{title}}</h2>
+<div class="wrapper">
+
+<form>
+    <div> 
+      <input type="text" placeholder="Search by Account Number" #searchByAccNum (enter)="searchByAccNumFn(searchByAccNum.value); searchByAccNum.value=''" />
+     <button (click)="searchByAccNumFn(searchByAccNum.value); searchByAccNum.value=''">Search</button>
+     <button (click)="getAll(); searchByAccNum.value=''">All</button>
+    </div>
+  </form>
+
+
+
+ 
+
+  <h2 *ngIf="loading">Loading...</h2>
+  <h2 *ngIf="!newAccounts.length && !loading">Nothing found</h2>
+  <div class="accounts">
+ 
+    <div class="account" *ngFor="let account of newAccounts">
+      <!-- <app-card [account] ="account"></app-card> -->
+      <p class="carTitle">accNumber: <strong>{{ account?.accNumber}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.deposit.amount">Deposit Ammount: <strong>{{ account.type.deposit.amount }} </strong></p>
+      <p class="carTitle" *ngIf="account.type.deposit.date">Deposit Date: <strong>{{ account.type.deposit.date}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.withdraw.amount">Withdraw Ammount: <strong>{{ account.type.withdraw.amount}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.withdraw.date">Withdraw Date: <strong>{{ account.type.withdraw.date}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.loan.amount">Loan Ammount: <strong>{{ account.type.loan.amount}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.loan.date">Loan Date: <strong>{{ account.type.loan.date}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.loan.interest">Loan Interest: <strong>{{ account.type.loan.interest}} </strong></p>
+      <p class="carTitle" *ngIf="account.type.loan.payments">Loan Payments: <strong>{{ account.type.loan.payments}} </strong></p>
+    </div>
+  </div>
+</div>

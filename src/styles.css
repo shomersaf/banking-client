@@ -1,0 +1,226 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Gruppo&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,600;1,600&family=Rajdhani:wght@300;400;600&family=Roboto:ital,wght@0,100;1,400&family=Rock+Salt&family=Turret+Road:wght@200;300;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614375624_60-p-fon-dlya-shapki-svetlii-67.png");
+
+    font-family: 'Rajdhani', sans-serif;
+}
+h2{
+    text-align: center;
+}
+.wrapper{
+    margin-bottom: 90px;
+    height: 100%;
+}
+
+
+.car, .account{
+    margin: 20px auto;
+    width: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding:20px;
+   border-radius: 15px;
+   background-color:rgb(225, 245, 171);
+   border: 3px double  rgb(73, 139, 3);
+}
+.account p:first-of-type{
+
+  height: 40px;
+  width: 100%;
+  text-align: center;
+   font-size: larger;
+}
+.cars{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+
+
+button {
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(230, 244, 238);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
+    color:rgb(23, 44, 1);
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); 
+  }
+  button:hover {
+    background-color:rgb(181, 219, 202);
+    color:rgb(0, 0, 0);
+    /* transform: translateY(1px); */
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.5); 
+  }
+
+  .formButton{
+margin:10px  auto;
+  }
+  .buttonDiv{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+
+  .deleteButton {
+    background-color: rgb(168, 67, 87);
+  }
+
+  .deleteButton:hover {
+    background-color: rgb(122, 51, 65);
+  }
+
+.wrapper form{
+  width: fit-content;
+margin:auto;
+display: flex;
+flex-direction: column;
+}
+input{
+  background-color: transparent;
+  height:40px;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid black;
+  margin:10px;
+  width: 400px;
+}
+option{
+  background-color:rgb(225, 245, 171);
+  outline: none;
+  border:none;
+  height: 40px;
+}
+select{
+  background-color:rgb(225, 245, 171);
+  outline: none;
+  border:none;
+  height: 40px;
+}
+.selects{
+  background-color:rgb(225, 245, 171);
+display: flex;
+width: 500px;
+justify-content: space-around;
+align-items: center;
+}
+.buttonsDiv{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allButton{
+  margin: 0;
+}
+footer {
+  background-color:rgb(230, 244, 238);
+  border:none;
+  border-top: 3px solid rgb(73, 139, 3);
+     width: 100%;
+     position: fixed;
+     bottom: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color:rgb(73, 139, 3);
+     min-height: 80px;
+   }
+
+   h1{
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-family: 'Turret Road', sans-serif;
+  }
+
+header {
+    /* background: #33ffff; */
+    font-family: 'Bellota Text', sans-serif;
+    background-color:rgb(230, 244, 238);
+    max-height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100px;
+    /* margin-bottom: 15px; */
+    color:rgb(73, 139, 3);
+    border:none;
+    border-bottom: 3px solid rgb(73, 139, 3);
+  }
+  nav a:hover {
+    color:rgb(42, 81, 0);
+  }
+  nav a {
+    font-size: large;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  nav a:first-child {
+    padding-left: 0px;
+  }
+  
+  nav {
+    color:rgb(73, 139, 3);
+    min-width:fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+  }
+  nav a{
+    color:rgb(73, 139, 3);
+    text-decoration: none;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 20px auto;
+}
+.formDiv{
+  background-color:rgb(225, 245, 171);
+  border: 3px double  rgb(73, 139, 3);
+    width: 600px;
+    width: fit-content;
+    height: fit-content;
+    margin: 8% auto;
+    padding:20px;
+    border-radius: 15px;
+    /* padding-bottom: 100px; */
+}
+input{
+    background-color: transparent;
+    height:40px;
+    outline:none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:10px;
+}
+
+.polosa{
+  width: 100%;
+  height: 3px;
+  background-color:rgb(187, 255, 0);
+  margin-bottom: 15px;
+}
