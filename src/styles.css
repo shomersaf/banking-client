@@ -8,7 +8,9 @@
 }
 
 body{
-  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614375624_60-p-fon-dlya-shapki-svetlii-67.png");
+  /* background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614375624_60-p-fon-dlya-shapki-svetlii-67.png") cover; */
+   background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614375624_60-p-fon-dlya-shapki-svetlii-67.png") top / cover;
+
  background-color: silver;
     font-family: 'Rajdhani', sans-serif;
 }
